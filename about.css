@@ -1,0 +1,72 @@
+body{
+	overflow-x: hidden;
+}
+
+.bootstrap-override-navbar-brand {
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-right: 10px;
+}
+
+.navbar {
+	padding-top: 20px;
+	padding-bottom: 20px;
+    position: relative;
+    min-height: 75px;
+    border: 1px solid transparent;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+	font-size: 18px;
+	font-family: roboto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  background-color: black;
+}
+
+.navbar-default .navbar-nav > li[id="contactBtn"] > a{
+	background: #28C654;
+	color: white;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li[id="contactBtn"] > a:hover,
+.navbar-default .navbar-nav > li[id="contactBtn"] > a:focus {
+  background: black;
+}
+
+.navbar-nav > li > a {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+#mainHeader .navbar-default .navbar-toggle .icon-bar {
+    background-color: #030038;
+}
+
+#activeBtn{
+	color: white;
+	background: black;
+}
+
+#aboutContent{
+	padding: 10px;
+	margin-left: 20px;
+}
+#aboutContent h1{
+	color: #00c15d;
+	font-family: Nunito;
+	font-size: 50px;
+	margin-bottom: 30px;
+
+}
