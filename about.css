@@ -196,7 +196,7 @@ div[class="col-sm-6 col-xs-12"]{
 	font-size: 100%;
 	font-weight: bold;
 	min-width: 150px;
-	width: 80%;
+	width: 100%;
 	border-radius: 0px;
 }
 
@@ -230,11 +230,10 @@ div[class="col-sm-6 col-xs-12"]{
 	color: white;
 	font-weight: bold;
 	margin-left: -127px;
-	margin-bottom: 4px;
+	margin-bottom: 3px;
 	border-radius: 0px;
 	background: #28C654;
-	border: solid 5px white;
-
+	border: solid 1px transparent;
 }
 
 #searchBtn:hover{

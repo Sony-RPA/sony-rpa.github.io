@@ -393,7 +393,7 @@ div[class="col-sm-4 col-xs-12 newsFirstCol"] a[class="btn btn-lg btn-success"]{
 
 
 div[class="col-sm-4 col-xs-12 milestone"]{
-	padding-right: 35px;	
+	padding-right: 35px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	border-top: groove black 4px;
@@ -403,7 +403,7 @@ div[class="col-sm-4 col-xs-12 milestone"]{
 
 div[class="col-sm-4 col-xs-12 milestone"]:hover{
 	border-top: groove #449d44 8px;
-	-webkit-transition: border-color 0.3s ease-out;		
+	-webkit-transition: border-color 0.3s ease-out;
 }
 
 .milestoneDate{
@@ -440,12 +440,12 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 #searchBtn{
 	font-size: 16px;
 	color: white;
+	font-weight: bold;
 	margin-left: -127px;
-	margin-bottom: 4px;
+	margin-bottom: 3px;
 	border-radius: 0px;
 	background: #28C654;
-	border: solid 5px white;
-
+	border: solid 1px transparent;
 }
 
 #searchBtn:hover{
