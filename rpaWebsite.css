@@ -440,7 +440,7 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 	margin-bottom: 4px;
 	border-radius: 0px;
 	background: #28C654;
-	border: solid 4px white;
+	border: solid 5px white;
 
 }
 
@@ -449,13 +449,13 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 }
 
 #closingBanner div[class="col-sm-3 col-xs-12"]{
-	padding-left: 0px;
+	padding-left: 10px;
 	padding-right: 0px;
 	padding-bottom: 20px;
 }
 
 #closingBanner div[class="col-sm-6 col-xs-12"]{
-	padding-left: 0px;
+	padding-left: 10px;
 	padding-right: 0px;
 }
 
