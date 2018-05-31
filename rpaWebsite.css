@@ -1,7 +1,11 @@
 
+html, body{
+	overflow-x: hidden;
+}
+
 body{
 	text-align: center;
-/*	overflow-x: hidden;*/
+	overflow-x: hidden;
 }
 
 body p{
