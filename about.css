@@ -10,6 +10,10 @@ body{
     padding-right: 10px;
 }
 
+.bootstrap-override-navbar-brand img{
+	margin-left: -9px;
+}
+
 .navbar {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -60,13 +64,40 @@ body{
 }
 
 #aboutContent{
-	padding: 10px;
-	margin-left: 20px;
+	padding: 20px;
+	padding-bottom: 60px;
 }
+
 #aboutContent h1{
 	color: #00c15d;
 	font-family: Nunito;
 	font-size: 50px;
 	margin-bottom: 30px;
+}
 
+#aboutContent p{
+	font-size: 28px;
+	margin-right: 25%;
+	font-family: nunito;
+	color: #788c9a;
+	margin-bottom: 30px;
+}
+
+#sloganContent{
+	background: #0a172b;
+	font-family: nunito;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	color: #ea891f;
+}
+
+#sloganContent h2{
+	font-size: 28px;
+}
+
+#sloganContent p{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	color: white;
 }
