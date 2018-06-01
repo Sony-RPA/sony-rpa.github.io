@@ -1,0 +1,247 @@
+
+body{
+}
+
+.spinner{
+	width: 80px;
+	height: 80px;
+	border: 2px solid turquoise;
+	border-top: 3px solid azure;
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+	from{
+		transform: rotate(0deg);
+	}to{
+		transform: rotate(360deg);
+	}
+}
+
+#overlay{
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 1);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+
+}
+
+.bootstrap-override-navbar-brand {
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-right: 10px;
+}
+
+.bootstrap-override-navbar-brand img{
+	margin-left: -10px;
+}
+
+.navbar {
+	padding-top: 20px;
+	padding-bottom: 20px;
+    position: relative;
+    min-height: 75px;
+    border: 1px solid transparent;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+	font-size: 18px;
+	font-family: roboto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  background-color: black;
+}
+
+.navbar-default .navbar-nav > li[id="contactBtn"] > a{
+	background: #28C654;
+	color: white;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li[id="contactBtn"] > a:hover,
+.navbar-default .navbar-nav > li[id="contactBtn"] > a:focus {
+  background: black;
+}
+
+.navbar-nav > li > a {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+#mainHeader .navbar-default .navbar-toggle .icon-bar {
+    background-color: #030038;
+}
+
+#activeBtn{
+	color: white;
+	background: black;
+}
+
+#quizContent{
+	font-family: roboto;
+    font-size: 31px;
+	color: white;
+	background-image: url("mainContentbg.jpg");
+	background-position: center;
+	background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div [class="container quiz"]{
+	margin-right: 0px;
+	padding-top: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
+
+#rubric{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-family: pt sans;
+	min-height: 400px;
+}
+
+#rubric hr{
+	border: solid 1px transparent;
+}
+
+#rubric div [class="col-sm-4 col-xs-12"]{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 35px;
+	font-size: 18px;
+	border-top: 4px groove black;
+	border-left: 8px groove transparent;
+	border-right: 8px groove transparent;
+}
+
+#rubric h1{
+	padding: 0px;
+	font-size: 30px;
+}
+
+#rubric h2{
+	margin-bottom: 0px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	color: #3690d1;
+	font-weight: bold;
+}
+
+#rubric div [class="col-sm-4 col-xs-12"]:hover{
+	border-top: 8px groove #449d44;
+	-webkit-transition: border-color 0.3s ease-out;
+}
+
+#closingBanner{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: left;
+	background-image: url("mainContentbg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: roboto;
+}
+
+#closingBanner div[class="col-sm-6 col-xs-12"]{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 70px;
+}
+
+.processSearch{
+	font-size: 100%;
+	width: 60%;
+	min-height: 45px;
+	border-radius: 0px;
+	float: left;
+}
+
+#searchBtn{
+	line-height: 30px;
+	font-size: 100%;
+	color: white;
+	min-width: 30%;
+	font-weight: bold;
+	border-radius: 0px;
+	background: #28C654;
+	border: solid 1px transparent;
+}
+
+#searchBtn:hover{
+	background: black;
+}
+
+#closingBanner div[class="col-sm-3 col-xs-12"]{
+	padding-left: 10px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+}
+
+#closingBanner div[class="col-sm-6 col-xs-12"]{
+	padding-left: 10px;
+	padding-right: 0px;
+}
+
+#closingBanner div[class="col-sm-3 col-xs-12"] p{
+	text-align: left;
+	color: #3690d1;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+}
+
+#closingBanner div[class="col-sm-6 col-xs-12"] p{
+	text-align: left;
+	color: #3690d1;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+}
+
+.listnoBullets{
+	list-style-type: none;
+	padding: 0px;
+}
+
+.listnoBullets li a{
+	color: white;
+	font-size: 18px;
+}
+
+.listnoBullets li a:hover{
+	color: #ea891f;
+	text-decoration: none
+}
+
+#trademark{
+	color: #717272;
+}
