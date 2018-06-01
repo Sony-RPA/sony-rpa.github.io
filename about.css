@@ -230,8 +230,7 @@ div[class="col-sm-6 col-xs-12"]{
 	line-height: 30px;
 	font-size: 100%;
 	color: white;
-	width: 40%;
-	margin-left: 5px;
+	min-width: 40%;
 	font-weight: bold;
 	border-radius: 0px;
 	background: #28C654;
