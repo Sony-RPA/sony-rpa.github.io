@@ -100,10 +100,8 @@ body{
 #quizContent{
 	font-family: roboto;
     font-size: 32px;
-	color: white;
-	background-image: url("mainContentbg.jpg");
-	background-position: center;
-	background-size: cover;
+	color: black;
+	background: #e0f0fc;
 	padding-top: 70px;
 	padding-bottom: 80px;
 	text-align: center;
