@@ -1,5 +1,6 @@
 
-body{
+html body{
+	overflow-x: hidden;
 }
 
 .spinner{
@@ -150,7 +151,7 @@ p span{
 	padding-right: 0px;
 	width: 30%;
 	min-height: 233px;
-	min-width: 350px;
+	min-width: 300px;
 	margin-bottom: 8px;
 	margin-left: 25px;
 	margin-right: 10px;
