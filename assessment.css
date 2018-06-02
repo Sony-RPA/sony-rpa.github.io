@@ -126,11 +126,13 @@ p span{
 }
 
 #rubric{
+	background: #364443;
+	color: white;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
-	padding-bottom: 50px;
-	font-family: pt sans;
+	padding-bottom: 80px;
+	font-family: roboto;
 	min-height: 400px;
 }
 
@@ -138,36 +140,50 @@ p span{
 	border: solid 1px transparent;
 }
 
+
 #rubric div [class="col-sm-4 col-xs-12"]{
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 35px;
+	text-align: center;
+	background: #7b918e;
+	border: 1px solid white;
+	border: solid 1px transparent;
+	border-radius: 8px;
 	font-size: 18px;
-	border-top: 4px groove black;
-	border-left: 8px groove transparent;
-	border-right: 8px groove transparent;
+	padding-left: 0px;
+	padding-right: 0px;
+	overflow-x: hidden;
+	width: 30%;
+	min-height: 233px;
+	min-width: 350px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+
 }
 
 #rubric h1{
-	padding: 0px;
+	padding-left: 5px;
 	font-size: 30px;
 }
 
 #rubric h2{
+	background: #627c7b;
+	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
 	font-size: 30px;
-	color: #3690d1;
 	font-weight: bold;
 }
 
-#rubric div [class="col-sm-4 col-xs-12"]:hover{
-	color: black;
-	border-top: 8px groove #449d44;
-	-webkit-transition: border-color 0.3s ease-out;
+#rubric div [class="col-sm-4 col-xs-12"] h2:hover{
+	background: #28C654;
+	-webkit-transition: background 0.3s ease-out;
 }
 
 
+#rubric p{
+	padding: 30px 20px 30px 20px;
+}
 
 #closingBanner{
 	padding-top: 70px;
