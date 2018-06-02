@@ -100,7 +100,7 @@ body{
 #quizContent{
 	font-family: roboto;
     font-size: 32px;
-	color: black;
+	color: #788c9a;
 	background: #e0f0fc;
 	padding-top: 70px;
 	padding-bottom: 80px;
@@ -119,6 +119,10 @@ div [class="container quiz"]{
 	width: 40%;
 	min-width: 350px;
 
+}
+
+p span{
+	color: #ea891f;
 }
 
 #rubric{
