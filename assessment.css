@@ -99,7 +99,7 @@ body{
 
 #quizContent{
 	font-family: roboto;
-    font-size: 31px;
+    font-size: 30px;
 	color: white;
 	background-image: url("mainContentbg.jpg");
 	background-position: center;
@@ -112,10 +112,14 @@ body{
 }
 
 div [class="container quiz"]{
-	margin-right: 0px;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 30px;
 	padding-left: 0px;
 	padding-right: 0px;
+	position: relative;
+	width: 40%;
+	min-width: 350px;
 
 }
 
@@ -133,6 +137,7 @@ div [class="container quiz"]{
 }
 
 #rubric div [class="col-sm-4 col-xs-12"]{
+	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-right: 35px;
@@ -150,15 +155,18 @@ div [class="container quiz"]{
 #rubric h2{
 	margin-bottom: 0px;
 	padding-bottom: 20px;
-	font-size: 20px;
+	font-size: 30px;
 	color: #3690d1;
 	font-weight: bold;
 }
 
 #rubric div [class="col-sm-4 col-xs-12"]:hover{
+	color: black;
 	border-top: 8px groove #449d44;
 	-webkit-transition: border-color 0.3s ease-out;
 }
+
+
 
 #closingBanner{
 	padding-top: 70px;
