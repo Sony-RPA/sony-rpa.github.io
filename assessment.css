@@ -99,13 +99,13 @@ body{
 
 #quizContent{
 	font-family: roboto;
-    font-size: 30px;
+    font-size: 32px;
 	color: white;
 	background-image: url("mainContentbg.jpg");
 	background-position: center;
 	background-size: cover;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 70px;
+	padding-bottom: 80px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
