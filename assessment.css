@@ -182,8 +182,7 @@ p span{
 }
 
 #closingBanner{
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding: 70px 15px 70px 15px;
 	text-align: left;
 	background-image: url("mainContentbg.jpg");
 	background-size: cover;
@@ -201,6 +200,7 @@ p span{
 .processSearch{
 	font-size: 100%;
 	width: 60%;
+	min-width: 275px;
 	min-height: 45px;
 	border-radius: 0px;
 	float: left;
