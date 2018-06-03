@@ -121,8 +121,7 @@ body{
 #sloganContent{
 	background: #0a172b;
 	font-family: nunito;
-	padding-top: 50px;
-	padding-bottom: 60px;
+	padding: 50px 15px 60px 15px;
 	color: #ea891f;
 }
 
@@ -138,7 +137,7 @@ body{
 }
 
 #servicesContent{
-	padding: 50px;
+	padding: 50px 25px 50px 25px;
 	font-family: nunito;
 }
 
@@ -166,9 +165,7 @@ div[class="col-sm-6 col-xs-12"]{
 
 #whitepaper{
 	background: #e0f0fc;
-	padding-top: 50px;
-	padding-left: 10px;
-	padding-bottom: 50px;
+	padding: 50px 25px 50px 25px;
 }
 
 #whitepaper h2{
