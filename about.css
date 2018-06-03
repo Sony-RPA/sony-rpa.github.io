@@ -99,8 +99,7 @@ body{
 }
 
 #aboutContent{
-	padding: 20px;
-	padding-bottom: 60px;
+	padding: 20px 0px 60px 0px;
 }
 
 #aboutContent h1{
@@ -112,7 +111,7 @@ body{
 
 #aboutContent p{
 	font-size: 28px;
-	margin-right: 25%;
+	margin-right: 20%;
 	font-family: nunito;
 	color: #788c9a;
 	margin-bottom: 30px;
@@ -121,7 +120,7 @@ body{
 #sloganContent{
 	background: #0a172b;
 	font-family: nunito;
-	padding: 50px 15px 60px 15px;
+	padding: 50px 0px 60px 0px;
 	color: #ea891f;
 }
 
@@ -137,7 +136,7 @@ body{
 }
 
 #servicesContent{
-	padding: 50px 25px 50px 25px;
+	padding: 50px 15px 50px 15px;
 	font-family: nunito;
 }
 
@@ -165,7 +164,7 @@ div[class="col-sm-6 col-xs-12"]{
 
 #whitepaper{
 	background: #e0f0fc;
-	padding: 50px 25px 50px 25px;
+	padding: 50px 15px 50px 15px;
 }
 
 #whitepaper h2{
