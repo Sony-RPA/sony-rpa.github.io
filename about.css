@@ -111,7 +111,6 @@ body{
 
 #aboutContent p{
 	font-size: 28px;
-	margin-right: 20%;
 	font-family: nunito;
 	color: #788c9a;
 	margin-bottom: 30px;
@@ -151,9 +150,6 @@ body{
 	font-size: 18px;
 }
 
-div[class="col-sm-6 col-xs-12"]{
-	padding-left: 0px;
-}
 
 .imgCol{
 	text-align: center;
