@@ -98,8 +98,14 @@ body{
 	background: black;
 }
 
+
 #aboutContent{
-	padding: 20px 0px 60px 0px;
+	padding: 20px 15px 60px 15px;
+}
+
+#aboutContent div[class="col-sm-8 col-xs-12"]{
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 #aboutContent h1{
@@ -119,7 +125,7 @@ body{
 #sloganContent{
 	background: #0a172b;
 	font-family: nunito;
-	padding: 50px 0px 60px 0px;
+	padding: 50px 15px 60px 15px;
 	color: #ea891f;
 }
 
@@ -188,9 +194,14 @@ body{
 	font-size: 100%;
 	font-weight: bold;
 	min-width: 150px;
-	width: 100%;
+	width: 90%;
 	border-radius: 0px;
 	line-height: 25px;
+}
+
+#whitepaperBtn:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s ease;
 }
 
 
