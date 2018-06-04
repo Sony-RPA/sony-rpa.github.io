@@ -1,0 +1,33 @@
+#teamAvatars div[class="col-sm-3 col-xs-6"]{
+	text-align: center;
+	margin: 15px 0px 15px 0px;
+	font-size: 20px;
+	color: #091a26;
+	font-weight: bold;
+	font-family: ubuntu;
+}
+
+#teamAvatars p:nth-of-type(1){
+	padding-top: 30px;
+}
+
+
+.avatar{
+	width: 90%;
+}
+
+.avatar:hover{
+	transform: scale(1.1);
+	transition: transform 1s ease;
+}
+
+.mailArt{
+	opacity: 0.8;
+	padding: 10px 0px 10px 0px;
+	width: 20%;
+	min-width: 40px;
+}
+
+.mailArt:hover{
+	opacity: 1.0;
+}
