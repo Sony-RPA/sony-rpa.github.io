@@ -125,7 +125,7 @@ body a:visited{
 #openingContent{
 	min-height: 500px;
 	max-height: 1000px;
-	background-image: url("mainContentbg.jpg");
+	background-image: url("./images/mainContentbg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -420,7 +420,7 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 #closingBanner{
 	padding: 70px 15px 70px 15px;
 	text-align: left;
-	background-image: url("mainContentbg.jpg");
+	background-image: url("./images/mainContentbg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
