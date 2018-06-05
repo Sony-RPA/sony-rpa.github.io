@@ -102,7 +102,6 @@ html body{
 	font-family: roboto;
     font-size: 32px;
 	color: #788c9a;
-	background: #e0f0fc;
 	padding-top: 70px;
 	padding-bottom: 80px;
 	text-align: center;
@@ -204,6 +203,10 @@ p span{
 	padding-right: 50px;
 }
 
+#statsBanner div[class="col-md-6 col-sm-12"]:nth-of-type(2){
+	padding-left: 0px;
+	padding-right: 0px;
+}
 
 #statsBanner div[class="col-md-6 col-sm-12"] img{
 	width: 100%;
@@ -212,7 +215,6 @@ p span{
     -ms-user-drag: none; /* Internet Explorer/Edge */
     user-drag: none; /*Non-prefixed version, currently*/
 }
-
 
 #closingBanner{
 	padding: 70px 15px 70px 15px;
