@@ -127,15 +127,15 @@ p span{
 }
 
 #rubric{
-	background: #364443;
-	color: white;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
 	padding-bottom: 80px;
 	font-family: roboto;
-
+    background: #0a172b;
+    color: white;
 }
+
 
 #rubric hr{
 	border: solid 1px transparent;
@@ -144,9 +144,9 @@ p span{
 
 #rubric div [class="col-md-4 col-xs-12"]{
 	text-align: center;
-	background: #7b918e;
-	border-radius: 10px;
-	border: solid 5px #364443;
+	background: #15315e;
+	border-radius: 5px;
+	border: solid 5px #0a172b;
 	font-size: 18px;
 	padding-left: 0px;
 	padding-right: 0px;
@@ -157,17 +157,19 @@ p span{
 
 
 #rubric h1{
+	color: #ea891f;
+	font-weight: bold;	
 	padding-left: 10px;
 	font-size: 30px;
 }
 
 #rubric h2{
-	background: #627c7b;
+	background: #0f2444;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-bottom: 15px;
 	padding-top: 15px;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: bold;
 }
 
@@ -180,6 +182,37 @@ p span{
 #rubric p{
 	padding: 30px 20px 30px 20px;
 }
+
+
+#statsBanner{
+	padding: 70px 25px 70px 25px;
+	font-family: nunito;
+	font-size: 20px;
+	color: #788c9a
+}
+
+#statsBanner h2{
+	padding-bottom: 20px;
+	color: #00c15d;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+#statsBanner div[class="col-md-6 col-sm-12"]{
+	padding-left: 0px;
+	padding-right: 50px;
+}
+
+
+#statsBanner div[class="col-md-6 col-sm-12"] img{
+	width: 100%;
+    -webkit-user-drag: none; /* Safari */
+    -moz-user-drag: none; /* Firefox */
+    -ms-user-drag: none; /* Internet Explorer/Edge */
+    user-drag: none; /*Non-prefixed version, currently*/
+}
+
 
 #closingBanner{
 	padding: 70px 15px 70px 15px;
