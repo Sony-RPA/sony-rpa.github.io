@@ -100,6 +100,7 @@ body{
 
 
 #aboutContent{
+	font-family: Nunito;
 	padding: 20px 15px 60px 15px;
 }
 
@@ -110,14 +111,12 @@ body{
 
 #aboutContent h1{
 	color: #00c15d;
-	font-family: Nunito;
 	font-size: 50px;
 	margin-bottom: 30px;
 }
 
 #aboutContent p{
 	font-size: 28px;
-	font-family: nunito;
 	color: #788c9a;
 	margin-bottom: 30px;
 }
