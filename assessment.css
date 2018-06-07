@@ -141,7 +141,7 @@ p span{
 }
 
 
-#rubric div [class="col-md-4 col-xs-12"]{
+#rubric div [class="col-md-4 col-xs-12 grade"]{
 	text-align: center;
 	background: #15315e;
 	border-radius: 5px;
@@ -153,7 +153,6 @@ p span{
 	margin-bottom: 10px;
 	overflow-x: hidden;
 }
-
 
 #rubric h1{
 	color: #ea891f;
@@ -172,14 +171,14 @@ p span{
 	font-weight: bold;
 }
 
-#rubric div [class="col-md-4 col-xs-12"] h2:hover{
-	background: #28C654;
-	-webkit-transition: background 0.3s ease-out;
-}
-
 
 #rubric p{
 	padding: 30px 20px 30px 20px;
+}
+
+.rubricHover{
+	background: #28C654 !important; 
+	-webkit-transition: background 0.3s ease-out;
 }
 
 
