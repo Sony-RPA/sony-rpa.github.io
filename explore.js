@@ -31,7 +31,7 @@ dropdown.addEventListener("change", function(){
 		analytics.classList.remove("domoWalk")
 		analytics.classList.add("domoWait")
 
-		for(i = 0; i < squaresGood.length; i++){
+		for(var i = 0; i < squaresGood.length; i++){
 			squaresGood[i].classList.add("fadeIn")
 		}
 		optionInfo.textContent = "These orbs represent some of our most memorable scripts. Click on any orb to learn more about our processes."
@@ -39,7 +39,7 @@ dropdown.addEventListener("change", function(){
 		domoIntro.textContent = "You've arrived, Domo will wait for you."	
 
 	} else if(defaultOpt.selected == true){
-		for(i = 0; i < squaresGood.length; i++){
+		for(var i = 0; i < squaresGood.length; i++){
 			squaresGood[i].classList.remove("fadeIn")
 		}
 		removeActive()
@@ -57,26 +57,27 @@ dropdown.addEventListener("change", function(){
 })
 
 
-for(i = 0; i < squaresGood.length; i++){
+for(var i = 0; i < squaresGood.length; i++){
 	squaresGood[i].addEventListener("click", function(){
 		removeActive()
 		this.classList.add("activeSquare");
 		this.textContent = " "
-		processDesc.classList.add("fadeOut")
 		changeDesc()
 	})
 }
 
 
 function removeActive(){
-	for(i = 0; i < squaresGood.length; i++){
-		squaresGood[i].classList.remove("activeSquare")
-		squaresGood[i].textContent = ""
+	for(var i = 0; i < squaresGood.length; i++){
+		squaresGood[i].classList.remove("activeSquare");
+		squaresGood[i].textContent = "";
 	}
 
 }
 
 function changeDesc(){
+
+	processDesc.classList.add("fadeOut")
 	domoIntro.textContent = "Domo is finding your selection";
 
 	setTimeout(function(){
@@ -95,22 +96,22 @@ function changeDesc(){
 		setTimeout(function(){
 			var processStart = new Date(2018, 0, 9)
 			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "Resource Onboarding";
+			processName.textContent = "User ID Management";
 			processType.textContent = "IT Operations";
-			processDiff.textContent = "Easy";
+			processDiff.textContent = "Medium";
 			processLead.textContent = "Ali S.";
 			processDev.textContent = "Chris N.";
 			processAna.textContent = "Tristan W.";
 			processDays.textContent = timeElapsed + " Days"
 			processTime.textContent = "5 minutes"
-			processTotal.textContent = "2980 runs"
+			processTotal.textContent = timeElapsed * 15
 		}, 500)
-	} 
-	else if(squaresGood[1].textContent == " "){
+
+	} else if(squaresGood[1].textContent == " "){
 		setTimeout(function(){
 			var processStart = new Date(2018, 4, 1)
 			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "PTP Financial Close ";
+			processName.textContent = "PTP Financial Close";
 			processType.textContent = "Finance & Accounting";
 			processDiff.textContent = "Hard";
 			processLead.textContent = "Marvin D.";
@@ -118,7 +119,129 @@ function changeDesc(){
 			processAna.textContent = "Jerico C.";
 			processDays.textContent = timeElapsed + " Days"
 			processTime.textContent = "10 minutes"
-			processTotal.textContent = "120 runs"		
+			processTotal.textContent = timeElapsed * 22		
+		}, 500)
+
+	} else if(squaresGood[2].textContent == " "){
+		setTimeout(function(){
+			var processStart = new Date(2018, 1, 1)
+			var timeElapsed = Math.floor((today - processStart)/dayToMili)
+			processName.textContent = "Visitor Pass Creation";
+			processType.textContent = "IT Operations";
+			processDiff.textContent = "Easy";
+			processLead.textContent = "Danielle V.";
+			processDev.textContent = "Chris N.";
+			processAna.textContent = "Mike S.";
+			processDays.textContent = timeElapsed + " Days"
+			processTime.textContent = "1 minute"
+			processTotal.textContent = timeElapsed * 260	
+		}, 500)	
+
+	} else if(squaresGood[3].textContent == " "){
+		setTimeout(function(){
+			var processStart = new Date(2017, 11, 10)
+			var timeElapsed = Math.floor((today - processStart)/dayToMili)
+			processName.textContent = "HE Vendor FP&A";
+			processType.textContent = "Finance & Accounting";
+			processDiff.textContent = "Medium";
+			processLead.textContent = "Danielle V.";
+			processDev.textContent = "Patrick W.";
+			processAna.textContent = "Mike S.";
+			processDays.textContent = timeElapsed + " Days"
+			processTime.textContent = "5 minutes"
+			processTotal.textContent = timeElapsed * 6	
+		}, 500)
+
+	} else if(squaresGood[4].textContent == " "){
+		setTimeout(function(){
+			var processStart = new Date(2017, 7, 1)
+			var timeElapsed = Math.floor((today - processStart)/dayToMili)
+			processName.textContent = "PTP Invoice APAC";
+			processType.textContent = "Finance & Accounting";
+			processDiff.textContent = "Medium";
+			processLead.textContent = "Marvin D.";
+			processDev.textContent = "Juan B.";
+			processAna.textContent = "Jerico C.";
+			processDays.textContent = timeElapsed + " Days"
+			processTime.textContent = "5 minutes"
+			processTotal.textContent = timeElapsed * 40	
+		}, 500)
+
+	} else if(squaresGood[5].textContent == " "){
+		setTimeout(function(){
+			var processStart = new Date(2017, 9, 1)
+			var timeElapsed = Math.floor((today - processStart)/dayToMili)
+			processName.textContent = "OTC Consolidation";
+			processType.textContent = "Finance & Accounting";
+			processDiff.textContent = "Medium";
+			processLead.textContent = "John R.";
+			processDev.textContent = "Patrick W.";
+			processAna.textContent = "Jerico C.";
+			processDays.textContent = timeElapsed + " Days"
+			processTime.textContent = "5 minutes"
+			processTotal.textContent = timeElapsed * 8	
+		}, 500)	
+
+	} else if(squaresGood[6].textContent == " "){
+		setTimeout(function(){
+			var processStart = new Date(2017, 6, 1)
+			var timeElapsed = Math.floor((today - processStart)/dayToMili)
+			processName.textContent = "PTP Invoice LATAM";
+			processType.textContent = "Finance & Accounting";
+			processDiff.textContent = "Medium";
+			processLead.textContent = "Marvin D.";
+			processDev.textContent = "Juan B.";
+			processAna.textContent = "Jerico C.";
+			processDays.textContent = timeElapsed + " Days"
+			processTime.textContent = "5 minutes"
+			processTotal.textContent = timeElapsed * 55		
+		}, 500)	
+
+	} else if(squaresGood[7].textContent == " "){
+		setTimeout(function(){
+			var processStart = new Date(2017, 10, 1)
+			var timeElapsed = Math.floor((today - processStart)/dayToMili)
+			processName.textContent = "PPM Budget Recon";
+			processType.textContent = "Finance & Accounting";
+			processDiff.textContent = "Medium";
+			processLead.textContent = "Danielle V.";
+			processDev.textContent = "Chris N.";
+			processAna.textContent = "Mike S.";
+			processDays.textContent = timeElapsed + " Days"
+			processTime.textContent = "5 minutes"
+			processTotal.textContent = timeElapsed * 2		
+		}, 500)
+
+	} else if(squaresGood[8].textContent == " "){
+		setTimeout(function(){
+			var processStart = new Date(2018, 3, 1)
+			var timeElapsed = Math.floor((today - processStart)/dayToMili)
+			processName.textContent = "SAP Provisioning";
+			processType.textContent = "IT Operations";
+			processDiff.textContent = "Hard";
+			processLead.textContent = "Ali S.";
+			processDev.textContent = "Chris N.";
+			processAna.textContent = "Tristan W.";
+			processDays.textContent = timeElapsed + " Days"
+			processTime.textContent = "5 minutes"
+			processTotal.textContent = timeElapsed * 7		
+		}, 500)
+
+	} else if(squaresGood[9].textContent == " "){
+		setTimeout(function(){
+			var processStart = new Date(2017, 8, 1)
+			var timeElapsed = Math.floor((today - processStart)/dayToMili)
+			processName.textContent = "RPA KPI Feed";
+			processType.textContent = "IT Operations";
+			processDiff.textContent = "Hard";
+			processLead.textContent = "John R.";
+			processDev.textContent = "Juan B.";
+			processAna.textContent = "Jerico C.";
+			processDays.textContent = timeElapsed + " Days"
+			processTime.textContent = "5 minutes"
+			processTotal.textContent = timeElapsed * 24		
 		}, 500)
 	}
 }
+
+
