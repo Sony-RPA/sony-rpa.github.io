@@ -35,7 +35,7 @@ dropdown.addEventListener("change", function(){
 			squaresGood[i].classList.add("fadeIn")
 		}
 		optionInfo.textContent = "These orbs represent some of our most memorable scripts. Click on any orb to learn more about our processes."
-		defaultOpt.textContent = "Back to Domo"
+		defaultOpt.textContent = "Walk with Domo"
 		domoIntro.textContent = "You've arrived, Domo will wait for you."	
 
 	} else if(defaultOpt.selected == true){
@@ -51,8 +51,8 @@ dropdown.addEventListener("change", function(){
 		analytics.classList.add("domoWalk");
 
 		optionInfo.textContent = ""
-		defaultOpt.textContent = "Select a Path"
-		domoIntro.textContent = "This is Domo, he will guide you to your destination."
+		defaultOpt.textContent = "Choose a Path"
+		domoIntro.textContent = "Where would you like to go next?"
 	}
 })
 

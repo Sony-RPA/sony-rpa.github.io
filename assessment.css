@@ -175,7 +175,11 @@ p span{
 
 .rubricHover{
 	background: #28C654 !important; 
+	transition: background 0.3s ease-out;
 	-webkit-transition: background 0.3s ease-out;
+	-moz-transition: background 0.3s ease-out;
+	-o-transition: background 0.3s ease-out;
+	-ms-transition: background 0.3s ease-out;
 }
 
 

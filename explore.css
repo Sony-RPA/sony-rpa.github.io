@@ -136,6 +136,8 @@ select{
 	background: black;
 	border-radius: 50px;
 	outline: none;
+	width: 150px;
+	padding-left: 5px;
 }
 
 #animationContainer{
@@ -165,13 +167,20 @@ select{
 	border-radius: 100px;
 	background: #3690d1;
 	opacity: 1.0;
-	transform: scale(1.05);
-	transition: all 1.5s ease
+	transition: all 0.75s ease-in;
+	-webkit-transition: all 0.75s ease-in;
+	-moz-transition: all 0.75s ease-in;
+	-o-transition: all 0.75s ease-in;
+	-ms-transition: all 0.75s ease-in;
 }
 
 .fadeOut{
 	opacity: 0;
-	transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease-in;
+	-webkit-transition: opacity 0.5s ease-in;
+	-moz-transition: opacity 0.5s ease-in;
+	-o-transition: opacity 0.5s ease-in;
+	-ms-transition: opacity 0.5s ease-in;
 }
 
 
@@ -184,13 +193,17 @@ select{
 }
 
 #processDesc{
-	font-size: 22px;
+	font-size: 20px;
 	font-family: nunito;
 	color: #333;
 	background: #e0f0fc;
 	padding: 50px 0px 50px 0px;
 	text-align: center;
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
 }
 
 #processDesc ul{
@@ -225,8 +238,12 @@ div[id="processStats"]{
 
 div[class="squareGood fadeIn"]:hover{
 	background: #28C654;
-	transform: scale(1.10);
+	transform: scale(1.05);
 	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
 }
 
 #closingBanner{
