@@ -121,7 +121,7 @@ body{
 }
 
 .domoWait{
-	background-image: url(./images/tailwag.gif);
+	background-image: url(./images/tailWag.gif);
 	background-size: 25%;
 	background-position: right bottom;
 	background-repeat: no-repeat	
