@@ -45,9 +45,6 @@ body{
     padding-right: 10px;
 }
 
-.bootstrap-override-navbar-brand img{
-	margin-left: -10px;
-}
 
 .navbar {
 	padding-top: 20px;
