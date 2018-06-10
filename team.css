@@ -97,18 +97,16 @@ html body{
 
 #opener{
 	padding: 20px 0px 50px 0px;
-	font-size: 28px;
 	font-family: nunito;
 	color: #788c9a;
+	font-size: 3.0vh;
 }
 
 
-#opener p{
-}
 
 #opener h1 {
     color: #00c15d;
-    font-size: 50px;
+    font-size: 5.0vh;
     margin-bottom: 30px;
 }
 
@@ -265,4 +263,34 @@ html body{
 
 #trademark{
 	color: #717272;
+}
+
+
+@media only screen and (max-width: 600px){
+	#opener {
+		padding: 20px 0px 30px 0px;
+		font-family: nunito;
+		color: #788c9a;
+		font-size: 2.5vh;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#opener h1 {
+    	color: #00c15d;
+    	font-size: 4.0vh;
+    	margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#teamAvatars div[class="col-sm-3 col-xs-6"]{
+		text-align: center;
+		margin: 15px 0px 15px 0px;
+		font-size: 16px;
+		color: #091a26;
+		font-weight: bold;
+		font-family: ubuntu;
+	}
+
 }
