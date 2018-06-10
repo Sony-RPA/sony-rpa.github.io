@@ -106,13 +106,13 @@ body{
 	padding-right: 0px;
 }
 
-#aboutContent h1{
+#aboutHeader{
 	color: #00c15d;
 	font-size: 50px;
 	margin-bottom: 30px;
 }
 
-#aboutContent p{
+#aboutDesc{
 	font-size: 28px;
 	color: #788c9a;
 	margin-bottom: 30px;
@@ -286,4 +286,21 @@ body{
 
 #trademark{
 	color: #717272;
+}
+
+
+@media only screen and (max-width: 600px){
+	#aboutDesc{
+		font-size: 20px;
+		color: #788c9a;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#aboutHeader{
+		color: #00c15d;
+		font-size: 36px;
+		margin-bottom: 30px;
+	}
 }

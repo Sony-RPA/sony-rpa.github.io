@@ -316,3 +316,11 @@ p span{
 	}
 }
 
+@media only screen and (max-width: 600px){
+	#statsBanner div[class="col-md-6 col-sm-12"]{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+
