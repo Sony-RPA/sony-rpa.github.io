@@ -1,4 +1,4 @@
-html body{
+html, body{
 	overflow-x: hidden;
 }
 
@@ -99,14 +99,14 @@ html body{
 	padding: 20px 0px 50px 0px;
 	font-family: nunito;
 	color: #788c9a;
-	font-size: 3.0vh;
+	font-size: 28px;
 }
 
 
 
 #opener h1 {
     color: #00c15d;
-    font-size: 5.0vh;
+    font-size: 50px;
     margin-bottom: 30px;
 }
 
@@ -271,14 +271,14 @@ html body{
 		padding: 20px 0px 30px 0px;
 		font-family: nunito;
 		color: #788c9a;
-		font-size: 2.5vh;
+		font-size: 20px;
 	}
 }
 
 @media only screen and (max-width: 600px){
 	#opener h1 {
     	color: #00c15d;
-    	font-size: 4.0vh;
+    	font-size: 36px;
     	margin-bottom: 20px;
 	}
 }
