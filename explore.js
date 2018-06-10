@@ -4,6 +4,7 @@ var defaultOpt = document.getElementById("default")
 var scriptsOpt = document.getElementById("scripts")
 var productionOpt = document.getElementById("production")
 var imageDisplay = document.querySelector("#analytics img")
+var optionInfo = document.querySelector("#optionInfo")
 
 var squares = document.querySelectorAll(".square");
 var squaresGood = document.querySelectorAll(".squareGood")
@@ -50,7 +51,7 @@ dropdown.addEventListener("change", function(){
 		analytics.classList.remove("domoWait");
 		analytics.classList.add("domoWalk");
 
-		optionInfo.textContent = ""
+		optionInfo.textContent = "."
 		defaultOpt.textContent = "Choose a Path"
 		domoIntro.textContent = "Where would you like to go next?"
 	}
