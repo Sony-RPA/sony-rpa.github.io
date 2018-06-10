@@ -150,6 +150,7 @@ select{
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	height: 45vh;
 }
 
 .square{
@@ -376,4 +377,16 @@ div[class="squareGood fadeIn"]:hover{
 		padding-top: 25px;
 		text-align: left;
 	}
+}
+
+@media only screen and (max-width: 1000px){
+	#animationContainer{
+		text-align: center;
+		padding-left: 10px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
+}
+
 }
