@@ -26,6 +26,120 @@ var processDays = document.getElementById("processDays")
 var processTime = document.getElementById("processTime")
 var processTotal = document.getElementById("processTotal")
 
+var processList = [
+{
+	processName: "User ID Management",
+	processStart: new Date(2018, 0, 9),
+	processType: "IT Operations",
+	processDiff: "Medium",
+	processLead: "Ali S.",
+	processDev: "Chris N.",
+	processAna: "Tristan W.",
+	processTime: "5 minutes",
+	processDaily: 15
+},
+{
+	processName: "PTP Financial Close",
+	processStart: new Date(2018, 4, 1),
+	processType: "Finance & Accounting",
+	processDiff: "Hard",
+	processLead: "Marvin D.",
+	processDev: "Juan B.",
+	processAna: "Jerico C.",
+	processTime: "10 minutes",
+	processDaily: 22	
+},
+{
+	processName: "Visitor Pass Creation",
+	processStart: new Date(2018, 1, 1),
+	processType: "IT Operations",
+	processDiff: "Easy",
+	processLead: "Danielle V.",
+	processDev: "Chris N.",
+	processAna: "Mike S.",
+	processTime: "1 minute",
+	processDaily: 260	
+},
+{
+	processName: "HE Vendor FP&A",
+	processStart: new Date(2017, 11, 10),
+	processType: "Finance & Accounting",
+	processDiff: "Medium",
+	processLead: "Danielle V.",
+	processDev: "Patrick W.",
+	processAna: "Mike S.",
+	processTime: "5 minutes",
+	processDaily: 260
+},
+{
+	processName: "PTP Invoice APAC",
+	processStart: new Date(2017, 7, 1),
+	processType: "Finance & Accounting",
+	processDiff: "Medium",
+	processLead: "Marvin D.",
+	processDev: "Juan B.",
+	processAna: "Jerico C.",
+	processTime: "5 minutes",
+	processDaily: 40
+},
+{
+	processName: "OTC Consolidation",
+	processStart: new Date(2017, 9, 1),
+	processType: "Finance & Accounting",
+	processDiff: "Medium",
+	processLead: "John R.",
+	processDev: "Patrick W.",
+	processAna: "Jerico C.",
+	processTime: "5 minutes",
+	processDaily: 8
+},
+{
+	processName: "PTP Invoice LATAM",
+	processStart: new Date(2017, 6, 1),
+	processType: "Finance & Accounting",
+	processDiff: "Medium",
+	processLead: "Marvin D.",
+	processDev: "Juan B.",
+	processAna: "Jerico C.",
+	processTime: "5 minutes",
+	processDaily: 55
+},
+{
+	processName: "PPM Budget Recon",
+	processStart: new Date(2017, 10, 1),
+	processType: "Finance & Accounting",
+	processDiff: "Medium",
+	processLead: "Danielle V.",
+	processDev: "Chris N.",
+	processAna: "Mike S.",
+	processTime: "5 minutes",
+	processDaily: 2
+},
+{
+	processName: "SAP Provisioning",
+	processStart: new Date(2018, 3, 1),
+	processType: "IT Operations",
+	processDiff: "Hard",
+	processLead: "Ali S.",
+	processDev: "Chris N.",
+	processAna: "Tristan W.",
+	processTime: "5 minutes",
+	processDaily: 7
+},
+{
+	processName: "RPA KPI Feed",
+	processStart: new Date(2017, 8, 1),
+	processType: "IT Operations",
+	processDiff: "Hard",
+	processLead: "John R.",
+	processDev: "Juan B.",
+	processAna: "Jerico C.",
+	processTime: "5 minutes",
+	processDaily: 24
+}
+]
+	
+
 
 dropdown.addEventListener("change", function(){
 	if(scriptsOpt.selected == true){
@@ -76,6 +190,7 @@ function removeActive(){
 
 }
 
+
 function changeDesc(){
 
 	processDesc.classList.add("fadeOut")
@@ -92,157 +207,23 @@ function changeDesc(){
 		var dayToMili = 86400000;
 		var today = Date.now()
 
-
-	if(squaresGood[0].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2018, 0, 9)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "User ID Management";
-			processType.textContent = "IT Operations";
-			processDiff.textContent = "Medium";
-			processLead.textContent = "Ali S.";
-			processDev.textContent = "Chris N.";
-			processAna.textContent = "Tristan W.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "5 minutes"
-			processTotal.textContent = timeElapsed * 15
-		}, 500)
-
-	} else if(squaresGood[1].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2018, 4, 1)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "PTP Financial Close";
-			processType.textContent = "Finance & Accounting";
-			processDiff.textContent = "Hard";
-			processLead.textContent = "Marvin D.";
-			processDev.textContent = "Juan B.";
-			processAna.textContent = "Jerico C.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "10 minutes"
-			processTotal.textContent = timeElapsed * 22		
-		}, 500)
-
-	} else if(squaresGood[2].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2018, 1, 1)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "Visitor Pass Creation";
-			processType.textContent = "IT Operations";
-			processDiff.textContent = "Easy";
-			processLead.textContent = "Danielle V.";
-			processDev.textContent = "Chris N.";
-			processAna.textContent = "Mike S.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "1 minute"
-			processTotal.textContent = timeElapsed * 260	
-		}, 500)	
-
-	} else if(squaresGood[3].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2017, 11, 10)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "HE Vendor FP&A";
-			processType.textContent = "Finance & Accounting";
-			processDiff.textContent = "Medium";
-			processLead.textContent = "Danielle V.";
-			processDev.textContent = "Patrick W.";
-			processAna.textContent = "Mike S.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "5 minutes"
-			processTotal.textContent = timeElapsed * 6	
-		}, 500)
-
-	} else if(squaresGood[4].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2017, 7, 1)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "PTP Invoice APAC";
-			processType.textContent = "Finance & Accounting";
-			processDiff.textContent = "Medium";
-			processLead.textContent = "Marvin D.";
-			processDev.textContent = "Juan B.";
-			processAna.textContent = "Jerico C.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "5 minutes"
-			processTotal.textContent = timeElapsed * 40	
-		}, 500)
-
-	} else if(squaresGood[5].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2017, 9, 1)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "OTC Consolidation";
-			processType.textContent = "Finance & Accounting";
-			processDiff.textContent = "Medium";
-			processLead.textContent = "John R.";
-			processDev.textContent = "Patrick W.";
-			processAna.textContent = "Jerico C.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "5 minutes"
-			processTotal.textContent = timeElapsed * 8	
-		}, 500)	
-
-	} else if(squaresGood[6].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2017, 6, 1)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "PTP Invoice LATAM";
-			processType.textContent = "Finance & Accounting";
-			processDiff.textContent = "Medium";
-			processLead.textContent = "Marvin D.";
-			processDev.textContent = "Juan B.";
-			processAna.textContent = "Jerico C.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "5 minutes"
-			processTotal.textContent = timeElapsed * 55		
-		}, 500)	
-
-	} else if(squaresGood[7].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2017, 10, 1)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "PPM Budget Recon";
-			processType.textContent = "Finance & Accounting";
-			processDiff.textContent = "Medium";
-			processLead.textContent = "Danielle V.";
-			processDev.textContent = "Chris N.";
-			processAna.textContent = "Mike S.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "5 minutes"
-			processTotal.textContent = timeElapsed * 2		
-		}, 500)
-
-	} else if(squaresGood[8].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2018, 3, 1)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "SAP Provisioning";
-			processType.textContent = "IT Operations";
-			processDiff.textContent = "Hard";
-			processLead.textContent = "Ali S.";
-			processDev.textContent = "Chris N.";
-			processAna.textContent = "Tristan W.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "5 minutes"
-			processTotal.textContent = timeElapsed * 7		
-		}, 500)
-
-	} else if(squaresGood[9].textContent == " "){
-		setTimeout(function(){
-			var processStart = new Date(2017, 8, 1)
-			var timeElapsed = Math.floor((today - processStart)/dayToMili)
-			processName.textContent = "RPA KPI Feed";
-			processType.textContent = "IT Operations";
-			processDiff.textContent = "Hard";
-			processLead.textContent = "John R.";
-			processDev.textContent = "Juan B.";
-			processAna.textContent = "Jerico C.";
-			processDays.textContent = timeElapsed + " Days"
-			processTime.textContent = "5 minutes"
-			processTotal.textContent = timeElapsed * 24		
-		}, 500)
+	for(var i = 0; i < squaresGood.length; i++){
+		(function(i) {
+			if(squaresGood[i].textContent == " "){
+				var timeElapsed = Math.floor((today - processList[i].processStart)/dayToMili);
+					setTimeout(function(){
+						processName.textContent = processList[i].processName;
+						processType.textContent = processList[i].processType;
+						processDiff.textContent = processList[i].processDiff;
+						processLead.textContent = processList[i].processLead;
+						processDev.textContent = processList[i].processDev;
+						processAna.textContent = processList[i].processAna;
+						processDays.textContent = timeElapsed + " Days";
+						processTime.textContent = processList[i].processTime;
+						processTotal.textContent = timeElapsed * processList[i].processDaily;
+					}, 500)			
+			}
+		})(i);
 	}
 }
-
 
