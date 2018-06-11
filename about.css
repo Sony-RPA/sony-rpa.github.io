@@ -221,9 +221,10 @@ html, body{
 .processSearch{
 	font-size: 100%;
 	width: 60%;
-	min-width: 275px;
+	min-width: 300px;
 	min-height: 45px;
 	border-radius: 0px;
+	margin-bottom: 5px;
 	float: left;
 }
 
@@ -302,5 +303,19 @@ html, body{
 		color: #00c15d;
 		font-size: 36px;
 		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	#searchBtn{
+		line-height: 30px;
+		font-size: 100%;
+		color: white;
+		width: 60%;
+		min-width: 300px;
+		font-weight: bold;
+		border-radius: 0px;
+		background: #28C654;
+		border: solid 1px transparent;
 	}
 }

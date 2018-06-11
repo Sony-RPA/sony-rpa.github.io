@@ -140,6 +140,8 @@ body a:visited{
 	font-family: roboto;
 	color: white;
 	font-size: 35px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #sloganBottom{
@@ -149,7 +151,9 @@ body a:visited{
 	font-style: bold;
 	color: rgba(140, 252, 70, 0.8);
 	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-bottom: 5px
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 div .btn, .btn-info, .btn-md{
@@ -436,8 +440,9 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 .processSearch{
 	font-size: 100%;
 	width: 60%;
-	min-width: 275px;
+	min-width: 300px;
 	min-height: 45px;
+	margin-bottom: 5px;
 	border-radius: 0px;
 	float: left;
 }
@@ -508,6 +513,8 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 		font-family: roboto;
 		color: white;
 		font-size: 28px;
+		margin-left: 10px;
+    	margin-right: 10px;
 	}
 }
 
@@ -520,6 +527,8 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 		color: rgba(140, 252, 70, 0.8);
 		padding-top: 5px;
 		padding-bottom: 5px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 
@@ -527,5 +536,20 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 	.serviceDesc{
 		font-size: 14px;
 		font-weight: normal;
+	}
+}
+
+
+@media only screen and (max-width: 1000px){
+	#searchBtn{
+		line-height: 30px;
+		font-size: 100%;
+		color: white;
+		width: 60%;
+		min-width: 300px;
+		font-weight: bold;
+		border-radius: 0px;
+		background: #28C654;
+		border: solid 1px transparent;
 	}
 }
