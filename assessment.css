@@ -226,11 +226,6 @@ p span{
 	font-family: roboto;
 }
 
-#closingBanner div[class="col-sm-6 col-xs-12"]{
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-bottom: 70px;
-}
 
 .processSearch{
 	font-size: 100%;
@@ -265,7 +260,8 @@ p span{
 
 #closingBanner div[class="col-sm-6 col-xs-12"]{
 	padding-left: 10px;
-	padding-right: 0px;
+	padding-right: 10px;
+	padding-bottom: 70px;
 }
 
 #closingBanner div[class="col-sm-3 col-xs-12"] p{
