@@ -105,7 +105,12 @@ body a:visited{
 
 .navbar-default .navbar-nav > li[id="contactBtn"] > a:hover,
 .navbar-default .navbar-nav > li[id="contactBtn"] > a:focus {
-  background: black;
+  	transform: scale(1.02);
+ 	transition: transform 0.3s ease;
+	-webkit-transition: transform 0.3s ease;
+	-moz-transition: transform 0.3s ease;
+	-o-transition: transform 0.3s ease;
+	-ms-transition: transform 0.3s ease;
 }
 
 .navbar-nav > li > a {
@@ -365,6 +370,17 @@ div[class="col-sm-4 col-xs-12 newsFirstCol"] a[class="btn btn-lg btn-success"]{
 	border-radius: 0px;
 }
 
+div[class="col-sm-4 col-xs-12 newsFirstCol"] a[class="btn btn-lg btn-success"]:hover{
+	transform: scale(1.05);
+	transition: transform 0.3s ease;
+	-webkit-transition: transform 0.3s ease;
+	-moz-transition: transform 0.3s ease;
+	-o-transition: transform 0.3s ease;
+	-ms-transition: transform 0.3s ease;
+}
+
+
+
 
 .newsFirstCol{
 	text-align: left;
@@ -454,7 +470,12 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 }
 
 #searchBtn:hover{
-	background: black;
+  	transform: scale(1.03);
+ 	transition: transform 0.3s ease;
+	-webkit-transition: transform 0.3s ease;
+	-moz-transition: transform 0.3s ease;
+	-o-transition: transform 0.3s ease;
+	-ms-transition: transform 0.3s ease;
 }
 
 #closingBanner div[class="col-sm-3 col-xs-12"]{

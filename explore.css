@@ -78,7 +78,12 @@ html, body{
 
 .navbar-default .navbar-nav > li[id="contactBtn"] > a:hover,
 .navbar-default .navbar-nav > li[id="contactBtn"] > a:focus {
-  background: black;
+  	transform: scale(1.02);
+ 	transition: transform 0.3s ease;
+	-webkit-transition: transform 0.3s ease;
+	-moz-transition: transform 0.3s ease;
+	-o-transition: transform 0.3s ease;
+	-ms-transition: transform 0.3s ease;
 }
 
 .navbar-nav > li > a {
@@ -291,7 +296,12 @@ div[class="squareGood fadeIn"]:hover{
 }
 
 #searchBtn:hover{
-	background: black;
+  	transform: scale(1.03);
+ 	transition: transform 0.3s ease;
+	-webkit-transition: transform 0.3s ease;
+	-moz-transition: transform 0.3s ease;
+	-o-transition: transform 0.3s ease;
+	-ms-transition: transform 0.3s ease;
 }
 
 #closingBanner div[class="col-sm-3 col-xs-12"]{
@@ -356,7 +366,7 @@ div[class="squareGood fadeIn"]:hover{
 		font-family: nunito;
 		color: #333;
 		background: #e0f0fc;
-		padding: 50px 0px 50px 0px;
+		padding: 30px 0px 30px 0px;
 		text-align: center;
 		transition: all 0.5s ease-in;
 		-webkit-transition: all 0.5s ease-in;
