@@ -1,33 +1,18 @@
-var rubricHeaders1 = document.querySelectorAll("#rubric h2")[0]
-var rubricHeaders2 = document.querySelectorAll("#rubric h2")[1]
-var rubricHeaders3 = document.querySelectorAll("#rubric h2")[2]
-var rubricGrades1 = document.getElementsByClassName("col-md-4 col-xs-12 grade")[0]
-var rubricGrades2 = document.getElementsByClassName("col-md-4 col-xs-12 grade")[1]
-var rubricGrades3 = document.getElementsByClassName("col-md-4 col-xs-12 grade")[2]
+var rubricHeaders = document.querySelectorAll("#rubric h2")
+var rubricGrades = document.getElementsByClassName("col-md-4 col-xs-12 grade");
 
+for(var i = 0; i < rubricGrades.length; i++){
+	(function(i){
+		rubricGrades[i].addEventListener("mouseover", function(){
+			rubricHeaders[i].classList.add("rubricHover")
+		})
+	}(i))
+}
 
-rubricGrades1.addEventListener("mouseover", function(){
-	rubricHeaders1.classList.add("rubricHover")
-});
-
-rubricGrades1.addEventListener("mouseout", function(){
-	rubricHeaders1.classList.remove("rubricHover")
-});
-
-
-rubricGrades2.addEventListener("mouseover", function(){
-	rubricHeaders2.classList.add("rubricHover")
-});
-
-rubricGrades2.addEventListener("mouseout", function(){
-	rubricHeaders2.classList.remove("rubricHover")
-});
-
-
-rubricGrades3.addEventListener("mouseover", function(){
-	rubricHeaders3.classList.add("rubricHover")
-})
-
-rubricGrades3.addEventListener("mouseout", function(){
-	rubricHeaders3.classList.remove("rubricHover")
-})
+for(var i = 0; i < rubricGrades.length; i++){
+	(function(i){
+		rubricGrades[i].addEventListener("mouseout", function(){
+			rubricHeaders[i].classList.remove("rubricHover")
+		})
+	}(i))
+}
