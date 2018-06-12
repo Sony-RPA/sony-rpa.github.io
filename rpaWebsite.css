@@ -124,7 +124,6 @@ body a:visited{
 
 .strong{
 	font-weight: bolder;
-	font-size: 17px;
 }
 
 #openingContent{
@@ -593,5 +592,14 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 		margin-bottom: 5px;
 		border-radius: 0px;
 		float: left;
+	}
+}
+
+
+@media only screen and (max-width: 600px){
+	#roadmapBtn{
+		width: 90%;
+		margin-top: 6px;
+		margin-left: 0px;
 	}
 }
