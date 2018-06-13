@@ -26,14 +26,14 @@ var processDays = document.getElementById("processDays")
 var processTime = document.getElementById("processTime")
 var processTotal = document.getElementById("processTotal")
 
+var analyticsContainer = document.querySelector("#analytics .container")
 var animationContainer = document.getElementById("animationContainer")
 var particles = document.getElementById("particles-js")
+var particleCanvas = document.getElementsByTagName("canvas")
 
 window.addEventListener("load", function(){
 	particles.style.display = "none"
 })
-
-
 
 
 var processList = [

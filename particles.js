@@ -110,3 +110,9 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
 
+
+window.addEventListener("resize", function(){
+  particleCanvas[0].setAttribute("width", analyticsContainer.offsetWidth)
+  particleCanvas[0].setAttribute("height", analyticsContainer.offsetHeight * 0.5)
+})
+
