@@ -34,7 +34,7 @@ canvas {
 	canvas {
 	  display: block;
 	  vertical-align: bottom;
-	  max-height: 250px;
+	  min-height: 250px;
 	}
 }
 
@@ -42,7 +42,7 @@ canvas {
 	canvas {
 	  display: block;
 	  vertical-align: bottom;
-	  max-height: 300px;
+	  min-height: 300px;
 	}
 }
 
@@ -50,7 +50,7 @@ canvas {
 	canvas {
 	  display: block;
 	  vertical-align: bottom;
-	  max-height: 425px;
+	  min-height: 425px;
 	}
 }
 
