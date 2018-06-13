@@ -26,6 +26,16 @@ var processDays = document.getElementById("processDays")
 var processTime = document.getElementById("processTime")
 var processTotal = document.getElementById("processTotal")
 
+var animationContainer = document.getElementById("animationContainer")
+var particles = document.getElementById("particles-js")
+
+window.addEventListener("load", function(){
+	particles.style.display = "none"
+})
+
+
+
+
 var processList = [
 {
 	processName: "User ID Management",
@@ -143,17 +153,23 @@ var processList = [
 
 dropdown.addEventListener("change", function(){
 	if(scriptsOpt.selected == true){
+		animationContainer.style.display = "inherit"
+		particles.style.display = "none"
 		analytics.classList.remove("domoWalk")
 		analytics.classList.add("domoWait")
 
+	setTimeout(function(){
 		for(var i = 0; i < squaresGood.length; i++){
 			squaresGood[i].classList.add("fadeIn")
 		}
+	}, 100)
 		optionInfo.textContent = "These orbs represent some of our most memorable scripts. Click on any orb to learn more about our processes."
 		defaultOpt.textContent = "Walk with Domo"
 		domoIntro.textContent = "You've arrived, Domo will wait for you."	
 
 	} else if(defaultOpt.selected == true){
+		animationContainer.style.display = "inherit";
+		particles.style.display = "none"
 		for(var i = 0; i < squaresGood.length; i++){
 			squaresGood[i].classList.remove("fadeIn")
 		}
@@ -168,6 +184,23 @@ dropdown.addEventListener("change", function(){
 		optionInfo.textContent = "."
 		defaultOpt.textContent = "Choose a Path"
 		domoIntro.textContent = "Where would you like to go next?"
+	
+	} else if(productionOpt.selected == true){
+		for(var i = 0; i < squaresGood.length; i++){
+			squaresGood[i].classList.remove("fadeIn")
+		}	
+		removeActive()
+		processInfo.style.display = "none"
+		processTeam.style.display = "none"
+		processStats.style.display = "none"
+		optionInfo.textContent = "Our production environment is offline at this time. Please visit us again later."
+		domoIntro.textContent = 'Where would you like to go next?'
+		analytics.classList.remove("domoWalk");
+		analytics.classList.add("domoWait");
+		animationContainer.style.display = "none";
+		particles.style.display = "initial"
+
+
 	}
 })
 
