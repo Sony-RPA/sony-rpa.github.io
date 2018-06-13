@@ -11,6 +11,7 @@ canvas {
   display: initial;
   vertical-align: bottom;
   max-height: 425px;
+  max-width: 1170px;
 }
 
 
