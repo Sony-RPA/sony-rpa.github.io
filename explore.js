@@ -32,7 +32,8 @@ var particles = document.getElementById("particles-js")
 var particleCanvas = document.getElementsByTagName("canvas")
 
 window.addEventListener("load", function(){
-	particles.style.display = "none"
+	animationContainer.style.display = "none"
+	particles.style.visibility = "hidden"
 })
 
 
@@ -150,11 +151,11 @@ var processList = [
 ]
 	
 
-
 dropdown.addEventListener("change", function(){
 	if(scriptsOpt.selected == true){
 		animationContainer.style.display = "inherit"
-		particles.style.display = "none"
+		particles.style.visibility = "hidden"		
+		particles.style.position = "fixed"
 		analytics.classList.remove("domoWalk")
 		analytics.classList.add("domoWait")
 
@@ -168,8 +169,10 @@ dropdown.addEventListener("change", function(){
 		domoIntro.textContent = "You've arrived, Domo will wait for you."	
 
 	} else if(defaultOpt.selected == true){
-		animationContainer.style.display = "inherit";
-		particles.style.display = "none"
+		animationContainer.style.display = "none";
+		particles.style.position = "relative";
+		particles.style.visibility = "hidden"
+		particles.style.display = "initial"		
 		for(var i = 0; i < squaresGood.length; i++){
 			squaresGood[i].classList.remove("fadeIn")
 		}
@@ -198,7 +201,9 @@ dropdown.addEventListener("change", function(){
 		analytics.classList.remove("domoWalk");
 		analytics.classList.add("domoWait");
 		animationContainer.style.display = "none";
+		particles.style.position = "relative"
 		particles.style.display = "initial"
+		particles.style.visibility = "visible"
 
 
 	}

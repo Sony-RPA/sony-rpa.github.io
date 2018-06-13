@@ -111,8 +111,3 @@ particlesJS("particles-js", {
 });
 
 
-window.addEventListener("resize", function(){
-  particleCanvas[0].setAttribute("width", analyticsContainer.offsetWidth)
-  particleCanvas[0].setAttribute("height", analyticsContainer.offsetHeight * 0.5)
-})
-
