@@ -103,35 +103,106 @@ html, body{
 #quizContent{
 	font-family: roboto;
     font-size: 32px;
-	color: #788c9a;
-	padding-top: 70px;
-	padding-bottom: 80px;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 40px;
+	padding-bottom: 30px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	background: #788c9a;
 }
 
-div [class="container quiz"]{
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 30px;
-	padding-left: 0px;
-	padding-right: 0px;
-	position: relative;
-	width: 40%;
-	min-width: 350px;
-
-}
 
 p span{
-	color: #ea891f;
+	color: #ff9622;
+}
+
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container{
+	font-family: roboto;
+	position: relative;
+	height: 300px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+.question{
+	font-size: 28px;
+	color: #515c6d;
+	margin: 25px 15px;
+}
+
+.answers{
+	margin: 0px 25px;
+	display: inline-block;
+	text-align: left;
+}
+
+.answers label{
+	color: #4b5360;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: normal;
+
+}
+
+#slideNav{
+	width: 50%;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#slideNav button{
+	font-family: roboto;
+    font-size: 22px;
+    background-color: #279;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#slideNav button:hover{
+	background-color: #00b6ff;
+	transition: all 0.5s ease;
+}
+
+#results{
+	font-size: 18px;
+	font-family: roboto;
+	font-weight: bold;
+	margin: 25px 0px;
 }
 
 #rubric{
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 50px;
-	padding-bottom: 80px;
+	padding-top: 75px;
+	padding-bottom: 90px;
 	font-family: roboto;
     background: #0a172b;
     color: white;
@@ -177,6 +248,7 @@ p span{
 #rubric p{
 	padding: 30px 20px 30px 20px;
 }
+
 
 .rubricHover{
 	background: #28C654 !important; 
@@ -311,25 +383,67 @@ p span{
 
 
 @media only screen and (max-width: 600px){
-	#quizContent {
-	    font-size: 24px;
+	#quizContent{
 		font-family: roboto;
-		color: #788c9a;
-		padding-top: 70px;
-		padding-bottom: 80px;
+	    font-size: 32px;
+		color: white;
+		padding-top: 40px;
+		padding-bottom: 30px;
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+		background: #788c9a;
 	}
-}
-
-@media only screen and (max-width: 600px){
 	#statsBanner div[class="col-md-6 col-sm-12"]{
 		padding-left: 0px;
 		padding-right: 0px;
 	}
 }
 
+@media only screen and (max-width: 700px){
+	.question{
+		font-size: 24px;
+		color: #515c6d;
+		margin: 25px 15px;
+	}
+
+	.answers{
+		padding: 0px 15px;
+		display: inline-block;
+		text-align: left;
+	}
+
+	.answers label{
+		color: #4b5360;
+		display: block;
+		margin-bottom: 12px;
+		font-size: 16px;
+		font-weight: normal;
+
+	}
+
+	#slideNav{
+		width: 50%;
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#slideNav button{
+		font-family: roboto;
+	    font-size: 18px;
+	    background-color: #279;
+	    color: #fff;
+	    border: 0px;
+	    border-radius: 3px;
+	    padding: 12px;
+	    cursor: pointer;
+	    margin-bottom: 20px;
+	}
+
+}
 
 @media only screen and (max-width: 1000px){
 	#searchBtn{
@@ -348,6 +462,20 @@ p span{
 
 
 @media only screen and (max-width: 400px){
+	#quizContent{
+		font-family: roboto;
+	    font-size: 24px;
+		color: white;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		background: #788c9a;
+}
+
 	#searchBtn{
 		line-height: 30px;
 		font-size: 100%;
@@ -358,10 +486,6 @@ p span{
 		background: #28C654;
 		border: solid 1px transparent;
 	}
-}
-
-
-@media only screen and (max-width: 400px){
 	.processSearch{
 		font-size: 100%;
 		width: 100%;
@@ -370,4 +494,95 @@ p span{
 		border-radius: 0px;
 		float: left;
 	}
+}
+
+
+@media only screen and (max-width: 360px){
+	.question{
+		font-size: 22px;
+		color: #515c6d;
+		margin: 15px 15px;
+	}
+
+	.answers{
+		padding: 0px 15px;
+		display: inline-block;
+		text-align: left;
+	}
+
+	.answers label{
+		color: #4b5360;
+		display: block;
+		margin-bottom: 12px;
+		font-size: 14px;
+		font-weight: normal;
+
+	}
+
+	#slideNav{
+		width: 50%;
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#slideNav button{
+		font-family: roboto;
+	    font-size: 18px;
+	    background-color: #279;
+	    color: #fff;
+	    border: 0px;
+	    border-radius: 3px;
+	    padding: 12px;
+	    cursor: pointer;
+	    margin-bottom: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 330px){
+	.question{
+		font-size: 22px;
+		color: #515c6d;
+		margin: 15px 15px;
+	}
+
+	.answers{
+		padding: 0px 15px;
+		display: inline-block;
+		text-align: left;
+	}
+
+	.answers label{
+		color: #4b5360;
+		display: block;
+		margin-bottom: 12px;
+		font-size: 13px;
+		font-weight: normal;
+
+	}
+
+	#slideNav{
+		width: 50%;
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#slideNav button{
+		font-family: roboto;
+	    font-size: 16px;
+	    background-color: #279;
+	    color: #fff;
+	    border: 0px;
+	    border-radius: 3px;
+	    padding: 10px;
+	    cursor: pointer;
+	    margin-bottom: 20px;
+	}
+
 }

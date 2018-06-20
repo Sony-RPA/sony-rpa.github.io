@@ -43,10 +43,18 @@
 	</nav>
 </div>
 <div id="quizContent">
-	<p>These questions will help us better understand your <br> <span>automation needs.<span></p>
-	<div class="container quiz">
-		<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd5PdYDfEuPFRdabAsKD4l8PLFk72Kcn1FCegEZx2Py53.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
-	</div>	
+	<p>These questions will help us better understand your <br> <span>automation needs.<span></p>	
+</div>
+
+<div class="quiz-container">
+	<div id="quiz"></div>
+</div>
+
+<div id="slideNav">
+	<button id="previous">Previous Question</button>
+	<button id="next">Next Question</button>
+	<button id="submit">Submit</button>
+	<div id="results"></div>
 </div>
 
 <div id="rubric">
@@ -55,15 +63,15 @@
 			<h1>Scoring Rubric</h1>
 			<hr>
 			<div class="col-md-4 col-xs-12 grade">
-				<h2>75%+ (Ideal)</h2>
+				<h2>6+ (Ideal)</h2>
 				<p>A score in this range is ideal for automation. Work that is repetitive happens to be the easiest to streamline.</p>
 			</div>
 			<div class="col-md-4 col-xs-12 grade">
-				<h2>50% - 75% (Fair)</h2>
+				<h2>4 to 6 (Fair)</h2>
 				<p>These are tasks that require limited decision-making. We program our bots to account for all forseeable scenarios.</p>
 			</div>
 			<div class="col-md-4 col-xs-12 grade">
-				<h2>Under 50% (Hard)</h2>
+				<h2>Less than 4 (Hard)</h2>
 				<p>Tasks which require input from 3rd parties are the hardest to maintain. But rest assured, we will find a way.</p>
 			</div>
 		</div>
@@ -138,6 +146,7 @@
 
 <script src="loaderScreen.js"></script>
 <script src="rubricCosmetics.js" type="text/javascript"></script>
+<script src="quiz.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
