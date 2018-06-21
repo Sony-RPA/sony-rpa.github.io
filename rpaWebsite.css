@@ -63,7 +63,22 @@ body a:visited{
 }
 
 #roadmapBtn{
+	color: black;
 	margin-left: 5px;
+	border-radius: 0px;
+	box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+#roadmapBtn:hover{
+	background: white;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	transform: scale(1.03);
+	color: black;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
 }
 
 .bootstrap-override-navbar-brand {
@@ -165,6 +180,10 @@ div .btn, .btn-info, .btn-md{
 	color: black;
 	font-weight: bold;
 	border: 1px solid rgba(0,0,0,0.3);
+}
+
+#userContent a:hover{
+	transition: all 0.3s ease;
 }
 
 .horizontalLine{
@@ -371,11 +390,11 @@ div[class="col-sm-4 col-xs-12 newsFirstCol"] a[class="btn btn-lg btn-success"]{
 
 div[class="col-sm-4 col-xs-12 newsFirstCol"] a[class="btn btn-lg btn-success"]:hover{
 	transform: scale(1.05);
-	transition: transform 0.3s ease;
-	-webkit-transition: transform 0.3s ease;
-	-moz-transition: transform 0.3s ease;
-	-o-transition: transform 0.3s ease;
-	-ms-transition: transform 0.3s ease;
+	transition: transform 0.2s ease;
+	-webkit-transition: transform 0.2s ease;
+	-moz-transition: transform 0.2s ease;
+	-o-transition: transform 0.2s ease;
+	-ms-transition: transform 0.2s ease;
 }
 
 
@@ -594,10 +613,13 @@ div[class="col-sm-4 col-xs-12 milestone"]:hover{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
 	#roadmapBtn{
 		width: 90%;
 		margin-top: 6px;
 		margin-left: 0px;
+		border-radius: 0px;
+		color: black;
+		box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
 	}
 }
