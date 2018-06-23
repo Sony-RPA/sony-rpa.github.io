@@ -274,6 +274,16 @@ input{
 	padding: 15px;
 }
 
+div[class="img-thumbnail"]{
+	background: transparent;
+	padding: 0px;
+	border: none;
+}
+
+div[class="img-thumbnail"] img{
+	width: 100%;
+}
+
 #rpaServices{
 	background:#0a172b;
 	overflow-x: hidden;
@@ -285,9 +295,8 @@ input{
 	text-align: left;
 	font-weight: bold;
 	font-family: roboto;
-	padding: 10px;
 	color: white;
-	padding-left: 20px;
+	padding: 10px 30px
 }
 
 .serviceDesc{
@@ -295,31 +304,8 @@ input{
 	font-weight: normal;
 }
 
-#service1, #service2, #service3, #service4{
-	margin-top: 4.5px;
-}
 
-#service1:hover{
-	background: #449d44;
-	text-shadow: 1px 1px 1px black;
-	-webkit-transition: background-color 0.3s ease-out;
-	-moz-transition: background-color 0.3s ease-out;
-	 -o-transition: background-color 0.3s ease-out;
-	 -ms-transition: background-color 0.3s ease-out;
-	 transition: background-color 0.3s ease-out;
-}
-
-#service2:hover{
-	background-color: #31b0d5;
-	text-shadow: 1px 1px 1px black;
-	-webkit-transition: background-color 0.3s ease-out;
-	-moz-transition: background-color 0.3s ease-out;
-	 -o-transition: background-color 0.3s ease-out;
-	 -ms-transition: background-color 0.3s ease-out;
-	 transition: background-color 0.3s ease-out;
-}
-
-#service3:hover{
+.serviceHeader:hover{
 	background: #337ab7;
 	text-shadow: 1px 1px 1px black;
 	-webkit-transition: background-color 0.3s ease-out;
@@ -329,17 +315,8 @@ input{
 	 transition: background-color 0.3s ease-out;
 }
 
-#service4:hover{
-	background: #6532b7;
-	text-shadow: 1px 1px 1px black;
-	-webkit-transition: background-color 0.3s ease-out;
-	-moz-transition: background-color 0.3s ease-out;
-	 -o-transition: background-color 0.3s ease-out;
-	 -ms-transition: background-color 0.3s ease-out;
-	 transition: background-color 0.3s ease-out;
-}
-
 div[class="col-sm-3 col-xs-12 thumbnail"]{
+	padding: 0px;
 	overflow-x: hidden;
 }
 
